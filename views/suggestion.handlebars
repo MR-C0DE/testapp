@@ -1,0 +1,38 @@
+
+<div class="wrapper">
+<div className="Suggestion">
+
+            <div className="content wrapper">
+
+                <h2>Suggestion actuelle</h2>
+                <p>Ecoutez le sermon : <span>{{data.sermon}}</span></p>
+                <div className='btn'>
+                    <a rel="noopener" target="_blank" href={{data.link_listen}}><button className='press'>Appuyer sur Play pour ecouter la predication</button></a>
+                    <a href={{data.link_download}}><button className='download'>Telecharger le sermon</button></a>
+                </div>
+            </div>
+        </div>
+
+    <!-- Formulaire pour ajouter un cours -->
+    <form id="form-ajouter" novalidate>
+        <h2>Ajout d'une nouvelle suggestion</h2>
+        <label>
+            Sermon: 
+            <input type="text" id="input-sermon" required>
+        </label>
+        <div id="erreur-nom" class="erreur hidden"></div>
+
+        <label>
+            lien de lecture audio: 
+            <input type="url" id="input-listen" required>
+        </label>
+        <div id="erreur-date" class="erreur hidden"></div>
+        <label>
+            Lien de téléchargement: 
+            <input type="url" id="input-link-download" required>
+        </label>
+        <div id="erreur-heure" class="erreur hidden"></div>
+        
+        <input type="submit" value="Ajouter">
+    </form>
+</div>

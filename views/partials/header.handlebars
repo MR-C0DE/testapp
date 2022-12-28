@@ -1,0 +1,32 @@
+<!-- Header du site web avec le menu de navigation -->
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <h1>Lenifia</h1>
+        <nav>
+            <ul>
+                {{#if user}}
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/suggestion">Suggestions</a></li>
+                    <li><a href="/contenu">Contenus</a></li>
+                    <li><a href="/message">Message</a></li>
+                {{/if}}
+                {{#unless user}}
+                    <li><a href="/connexion">Connexion</a></li>
+                {{/unless}} 
+                {{#if user}}
+                    <li>
+                        <form method="post" action="/deconnexion">
+
+                            <input style=" background-color: rgb(104, 1, 1); padding:0.1rem;"  type="submit" value="Deconnexion" />
+                        </form>
+                    </li>
+                {{/if}}
+            </ul>
+        </nav>
+    </div>
+</header>

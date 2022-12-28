@@ -1,0 +1,29 @@
+
+.Content .element{
+    background-color: white;
+    width: 17rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.Content .element .tableau{
+    background-color: rgb(0, 50, 124);
+    color: #ffff;
+    font-weight: bold;
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 1.5em;
+}
+
+.Content .element h3{
+    font-size: 1.2em;
+    padding: 1rem 0;
+    font-weight: 600;
+    color:#008fbb
+}
+
+.Content .element p{
+    font-size: 1em;
+    line-height: 1.6;
+    padding-bottom: 1rem;
+}

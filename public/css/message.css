@@ -1,0 +1,53 @@
+.liste-message{
+    margin: 1rem auto;
+    max-width: 40rem;
+}
+.message-content{
+    margin-bottom: 1rem;
+}
+
+.affiche-message{
+    background-color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.status{
+    background-color: rgb(255, 251, 222);
+    border-left: 10px solid #ffa286;
+    padding: 3rem 1rem;
+    margin-right: 1rem;
+    font-size: 0rem;
+    font-family: calibri;
+    color: rgb(102, 0, 0);
+}
+
+.non_lue{
+    border-left: 10px solid #53ca89;
+    background-color: #e8ffee;
+}
+
+.lue{
+    border-left: 10px solid #9f9f9f;
+    background-color: #d7d7d7;
+}
+
+.contenu h3{
+    position: relative;
+    top: .3rem;
+}
+
+.contenu p{
+    color: #626262;
+    font-style: italic;
+    position: relative;
+    bottom: .3rem;
+}
+
+.message{
+    background-color: #ffffff;
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+}

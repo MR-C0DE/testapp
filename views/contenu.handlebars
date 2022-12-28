@@ -1,0 +1,56 @@
+
+
+<div class="wrapper">
+    <!-- Liste de cours dans la base de données -->
+    <div class="liste-cours">
+        <ul class="Contenu">
+            {{#each contenu}}
+                <li className='element'>
+                    <div className='tableau'>
+                        <h2>{{this.title}}</h2>
+                    </div>
+                    <div className='description'>
+                        <h3>{{this.sousTitle}}</h3>
+                        <p style="white-space: pre-wrap;">{{this.paragraph}}</p>
+                    </div>
+                    <div>
+                        <a href="{{this.link_about}}">En savoir plus</a>
+                    </div>
+
+                    <div>
+                        <button id="{{this.id_contenu}}">Supprimer</button>
+                    </div>
+
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <!-- Formulaire pour ajouter un cours -->
+    <form id="form-ajouter" novalidate>
+        <h2>Un nouveau contenu</h2>
+        <label>
+            Titre : 
+            <input type="text" id="input-title" required>
+        </label>
+        <div id="erreur-nom" class="erreur hidden"></div>
+
+        <label>
+            Sous titre: 
+            <input type="url" id="input-sousTitle" required>
+        </label>
+        <div id="erreur-date" class="erreur hidden"></div>
+        <label>
+            Le paragraphe: 
+            <textarea id="input-paragraph" required></textarea>
+        </label>
+        <div id="erreur-description" class="erreur hidden"></div>
+        <label>
+            Lien en savoir plus: 
+            <input type="url" id="input-link_about" required>
+        </label>
+        <div id="erreur-heure" class="erreur hidden"></div>
+
+        <input class="btn-add" type="submit" value="Ajouter">
+    </form>
+</div>

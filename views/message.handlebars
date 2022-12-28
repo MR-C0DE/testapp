@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <div class="liste-message">
+        {{#each messages}}
+            <div class='message-content open'>
+                <div  class="affiche-message">
+                    <div class="status {{this.status}}">
+                        <div>
+                            *
+                        </div>
+                    </div>
+                    <div class="contenu">
+                        <h3>{{this.courriel}}</h3>
+                        <p>{{this.raison}}</p>
+                    </div>
+                </div>
+                <div id="{{this.status}}-{{this.id_message}}" class="message hidden">
+                    <p style="white-space: pre-wrap;" >{{this.message}}</p>
+
+                    <div class="btn-close">
+                        <button>fermer</button>
+                    </div>
+            </div>
+
+            </div>
+
+        {{/each}}
+    </div>
+</div>

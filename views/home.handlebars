@@ -1,0 +1,33 @@
+
+<div class="wrapper">
+
+
+    <div class="nbr-visite">
+        <div class="label">Nombre de visite</div>
+        <div class="valeur">{{nombre}}</div>
+    </div>
+
+    <div class="interaction">
+        <!-- Formulaire pour ajouter un cours -->
+        <form id="form-ajouter" novalidate>
+            <h2>Les interactions</h2>
+            <label>
+                Recherche 
+                <select name="interac" id="interac">
+                    <option value="">Selection un element</option>
+                    {{#each selects}}
+                        <option value="{{this.action_effectuee}}">{{this.action_effectuee}}</option>
+                    {{/each}}
+                </select>
+            </label>
+            <div id="erreur-nom" class="erreur hidden"></div>
+        </form>
+        <div class="nombre-element">
+            <div class="label-select"></div>
+            <div class="value-select"></div>
+        </div>
+        <table id="res">
+
+        </table>
+    </div>
+</div>
